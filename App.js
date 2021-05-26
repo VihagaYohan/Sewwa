@@ -29,13 +29,15 @@ import BottomTabNavigator from './app/navigator/BottomNavigator';
 
 // screens
 import WelcomeScreen from './app/screens/AuthScreens/WelcomeScreen';
-
+import ConfirmationScreen from './app/screens/AuthScreens/ConfirmationScreen';
 
 const App = () => {
   return (
-    <NavigationContainer>
+    /*  <NavigationContainer>
       <AuthNavigator />
-    </NavigationContainer>
+    </NavigationContainer> */
+
+    <ConfirmationScreen />
   );
 };
 

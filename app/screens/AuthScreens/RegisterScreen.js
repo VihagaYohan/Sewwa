@@ -8,6 +8,7 @@ import {
   AppTextInput,
   Field,
   AppButton,
+  IoniconIcon,
 } from '../../components/';
 
 // constants
@@ -18,6 +19,7 @@ const {width, height} = SIZES;
 const RegisterScreen = ({navigation, route}) => {
   return (
     <Container style={styles.container}>
+      <IoniconIcon name="arrow-back" color={COLORS.primary} onPress={()=>navigation.goBack()}/>
       {/* content */}
       <View style={styles.contentContainer}>
         <AppText style={styles.title}>Register</AppText>
@@ -94,9 +96,11 @@ const RegisterScreen = ({navigation, route}) => {
 const styles = StyleSheet.create({
   container: {
     paddingHorizontal: normalizeSize(10),
-    paddingTop: normalizeSize(30),
+    paddingTop: normalizeSize(10),
   },
-  contentContainer: {},
+  contentContainer: {
+    paddingTop: normalizeSize(15),
+  },
   title: {
     fontFamily: 'Poppins-SemiBold',
     fontSize: normalizeSize(20),

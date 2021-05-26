@@ -17,7 +17,7 @@ import {COLORS} from '../constants';
 // Wrapper/parent container for all screens. All the children components render within this parent/wrapper component
 const Container = ({children, style}) => {
   return (
-    <SafeAreaView style={[{width, height, backgroundColor: COLORS.white}]}>
+    <SafeAreaView style={[styles.container]}>
       <View style={[{width, height, backgroundColor: COLORS.white}, style]}>
         {children}
       </View>
@@ -25,6 +25,12 @@ const Container = ({children, style}) => {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    width,
+    height,
+    backgroundColor: COLORS.white,
+  },
+});
 
 export default Container;

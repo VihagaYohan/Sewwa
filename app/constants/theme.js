@@ -20,6 +20,7 @@ export const COLORS = {
   lightGray: '#dedede',
   transparentWhite: 'rgba(255, 255, 255, 0.2)',
   transparentBlack: 'rgba(0, 0, 0, 0.4)',
+  transparentRed: 'rgba(255,22,48,0.89)',
 };
 
 export const SIZES = {

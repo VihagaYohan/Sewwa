@@ -27,9 +27,11 @@ import WelcomeScreen from './app/screens/AuthScreens/WelcomeScreen';
 
 const App = () => {
   return (
-    <NavigationContainer>
+   /*  <NavigationContainer>
       <BottomTabNavigator/>
-    </NavigationContainer>
+    </NavigationContainer> */
+
+    <WelcomeScreen/>
   )
 };
 

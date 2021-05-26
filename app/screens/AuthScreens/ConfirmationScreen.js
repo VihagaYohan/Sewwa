@@ -23,7 +23,6 @@ const ConfirmationScreen = ({navigation, route}) => {
       <IoniconIcon
         name="arrow-back"
         color={COLORS.primary}
-        onPress={() => navigation.goBack()}
       />
       {/* content */}
       <View style={styles.contentContainer}>
@@ -55,6 +54,21 @@ const ConfirmationScreen = ({navigation, route}) => {
         textFieldStyle={styles.textFieldStyle}
         textStyle={styles.textStyle}
       />
+
+      <AppText
+        style={{
+          fontFamily: 'Poppins-Regular',
+          color: COLORS.gray2,
+          textAlign: 'center',
+          marginTop: normalizeSize(10),
+        }}>
+        Didn't received any message ?
+        <AppText
+          style={{fontFamily: 'Poppins-SemiBold', color: COLORS.primary}}>
+          {' '}
+          Resend Code
+        </AppText>
+      </AppText>
     </Container>
   );
 };

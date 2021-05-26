@@ -17,12 +17,20 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import {NavigationContainer} from '@react-navigation/native'
+
+// navigator
+import BottomTabNavigator from './app/navigator/BottomNavigator'
 
 // screens
 import WelcomeScreen from './app/screens/AuthScreens/WelcomeScreen';
 
 const App = () => {
-  return <WelcomeScreen />;
+  return (
+    <NavigationContainer>
+      <BottomTabNavigator/>
+    </NavigationContainer>
+  )
 };
 
 const styles = StyleSheet.create({});

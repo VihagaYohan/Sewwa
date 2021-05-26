@@ -7,11 +7,13 @@ import IoniconIcon from './Icons/Ionicon'
 import AppTextInput from './form/AppTextInput'
 import AppButton from './form/AppButton'
 import AppText from './form/AppText'
+import Field from './form/Field'
 
 export {
     Container,
     IoniconIcon,
     AppTextInput,
     AppButton,
-    AppText
+    AppText,
+    Field
 }

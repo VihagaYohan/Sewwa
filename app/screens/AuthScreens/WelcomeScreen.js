@@ -4,6 +4,9 @@ import {StyleSheet, View, Text, ImageBackground} from 'react-native';
 // components
 import {Container, IoniconIcon, AppButton} from '../../components/';
 
+// routes
+import routes from '../../navigator/routes';
+
 // constants
 import {SIZES, normalizeSize, COLORS} from '../../constants';
 
@@ -27,12 +30,14 @@ const WelcomeScreen = ({navigation, route}) => {
           title="Register"
           buttonStyle={styles.buttonStyle}
           textStyle={styles.textStyle}
+          onPress={() => navigation.navigate(routes.Register_Screen)}
         />
 
         <AppButton
           title="Login"
           buttonStyle={styles.buttonStyle}
           textStyle={styles.textStyle}
+          onPress={() => navigation.navigate(routes.Login_Screen)}
         />
       </View>
     </ImageBackground>
@@ -49,7 +54,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.white,
   },
   textStyle: {
-    fontFamily:"Poppins-SemiBold",
+    fontFamily: 'Poppins-SemiBold',
     fontSize: normalizeSize(20),
     color: COLORS.primary,
   },

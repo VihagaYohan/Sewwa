@@ -17,22 +17,26 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import {NavigationContainer} from '@react-navigation/native'
+import {
+  NavigationContainer,
+  DefaultTheme,
+  DarkTheme,
+} from '@react-navigation/native';
 
 // navigator
-import BottomTabNavigator from './app/navigator/BottomNavigator'
+import AuthNavigator from './app/navigator/AuthNavigator';
+import BottomTabNavigator from './app/navigator/BottomNavigator';
 
 // screens
 import WelcomeScreen from './app/screens/AuthScreens/WelcomeScreen';
 
+
 const App = () => {
   return (
-   /*  <NavigationContainer>
-      <BottomTabNavigator/>
-    </NavigationContainer> */
-
-    <WelcomeScreen/>
-  )
+    <NavigationContainer>
+      <AuthNavigator />
+    </NavigationContainer>
+  );
 };
 
 const styles = StyleSheet.create({});

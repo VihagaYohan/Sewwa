@@ -6,13 +6,13 @@ import {SIZES, COLORS, normalizeSize} from '../../constants/index';
 
 const {width, height} = SIZES;
 
-const AppTextInput = ({placeholder, value, ...otherProps}) => {
+const AppTextInput = ({placeholder, value,style, ...otherProps}) => {
   return (
     /*  <View style={styles.container}>
       
     </View> */
     <TextInput
-      style={styles.text}
+      style={[styles.text,style]}
       placeholder={placeholder}
       value={value}
       {...otherProps}
@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
   container: {
     width: '100%',
     height: width * 0.2,
-    borderWidth: 1,
     borderRadius: normalizeSize(50),
     justifyContent: 'center',
   },
@@ -32,7 +31,6 @@ const styles = StyleSheet.create({
     width: '100%',
     height: width * 0.16,
     borderRadius: normalizeSize(40),
-    borderWidth: 1,
     color: COLORS.black,
   },
 });

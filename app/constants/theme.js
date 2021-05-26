@@ -4,7 +4,7 @@ import {Dimensions, PixelRatio, Platform} from 'react-native';
 const {width, height} = Dimensions.get('screen');
 
 export const COLORS = {
-  primary: '#FC7056', // Orange
+  primary: '#DC1630', // Orange
   secondary: '#01132E', // Dark blue
 
   white: '#fff',
